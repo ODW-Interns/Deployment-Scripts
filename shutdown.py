@@ -32,7 +32,7 @@ def shutdown_robin(service_directory):
     time.sleep(seconds) 
 
 # Forks multiple processes to execute the robin commands concurrently.
-def shutdown_service(services_to_shutdown_list):
+def shutdown_services(services_to_shutdown_list):
     processes = []
     
     for service in services_to_shutdown_list:
@@ -89,4 +89,4 @@ if __name__ == "__main__":
     else:
         parser.print_help()
 
-print "Exiting"
+    print "Exiting"
